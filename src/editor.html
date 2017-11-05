@@ -1,0 +1,22 @@
+<div class="editor-row">
+  <div class="section gf-form-group">
+    <h5 class="section-heading">General</h5>
+
+    <div class="gf-form">
+      <label class="gf-form-label width-10">Radius</label>
+      <input class="input-small gf-form-input width-10" ng-model="ctrl.panel.radius"/>
+    </div>
+  </div>
+
+  <div class="section gf-form-group">
+    <h5 class="section-heading">Colors</h5>
+
+    <div class="gf-form" ng-repeat="threshold in ctrl.panel.thresholds">
+      <label class="gf-form-label width-10">Threshold {{$index + 1}}</label>
+      <input class="input-small gf-form-input width-10" ng-model="threshold.value" ng-change="ctrl.render()"/>
+      <label class="gf-form-label">
+        <spectrum-picker ng-model="threshold.color" ng-change="ctrl.render()"/>
+      </label>
+    </div>
+  </div>
+</div>
