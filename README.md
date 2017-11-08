@@ -17,14 +17,14 @@ From the documentation: https://babeljs.io.
 Now let's create a simple pair of modules.
 
     # src/class.js
-    class MyClass {
+    export class MyClass {
       myMethod (arg) {
-        console.log(3)
+        console.log(arg)
       }
     }
 
     # src/main.js
-    import MyClass from './class'
+    import {MyClass} from './class'
     (new MyClass()).myMethod(3)
 
 Then transpile, check the output and run.
