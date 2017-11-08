@@ -7,7 +7,8 @@
 From the documentation: https://babeljs.io.
 
     npm init -y
-    npm install --save-dev babel-cli babel-preset-env
+    npm install --save-dev babel-preset-env
+    npm install -g babel-cli
 
     # .babelrc
     {
