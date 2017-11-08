@@ -108,6 +108,8 @@ We'll need grunt to copy this into dist.
       }
     }
 
+    grunt.registerTask('default', ['clean', 'copy', 'babel'])
+
     rm src/main.js src/class.js 
     grunt
 
