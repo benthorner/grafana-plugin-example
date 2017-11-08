@@ -128,6 +128,7 @@ Now we define our module controller.
 
 And finally try it in a test dashboard.
 
+    grunt
     docker run -it -v $PWD:/var/lib/grafana/plugins/my_plugin -p 3000:3000 --name grafana grafana/grafana
 
 You should see a blank panel (no html).
