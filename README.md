@@ -40,7 +40,7 @@ Then transpile, check the output and run.
 First install grunt and the babel plugin.
 
     sudo npm install -g grunt-cli
-    npm install --save-dev grunt grunt-babel
+    npm install --save-dev grunt grunt-babel babel-core
 
 Let's use the [example](https://github.com/babel/grunt-babel) to transpile our files.
 
