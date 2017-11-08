@@ -126,6 +126,8 @@ Now we define our module controller.
 
     PanelCtrl.templateUrl = 'module.html'
 
+    # src/module.html (empty)
+
 And finally try it in a test dashboard.
 
     grunt
